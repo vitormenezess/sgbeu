@@ -1,0 +1,8 @@
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.close{
+    border: none;
+}

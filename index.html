@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/71d95cd2fb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="img/book-open-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="records.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>
+      SGBEU - Sistema de Gestão de Bibliotecas para Escolas e Universidades
+    </title>
+  </head>
+  <body>
+    <header>
+        <i class="fas fa-solid fa-book-open"></i>
+      <h1>
+        <abbr
+          title="Sistema de Gestão de Bibliotecas para Escolas e Universidades"
+          >SGBEU</abbr
+        >
+      </h1>
+    </header>
+    <main>
+      <button type="button" class="btn black">Cadastrar Livro</button>
+      <table class="records">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Autor</th>
+            <th>Id Editora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <td>1</td>
+          <td>A culpa é das estrelas</td>
+          <td>Geoge P.</td>
+          <td>Abril</td>
+        </tbody>
+        <tbody>
+          <td>1</td>
+          <td>A culpa é das estrelas</td>
+          <td>Geoge P.</td>
+          <td>Abril</td>
+        </tbody>
+        <tbody>
+          <td>1</td>
+          <td>A culpa é das estrelas</td>
+          <td>Geoge P.</td>
+          <td>Abril</td>
+        </tbody>
+        <tbody>
+          <td>1</td>
+          <td>A culpa é das estrelas</td>
+          <td>Geoge P.</td>
+          <td>Abril</td>
+        </tbody>
+      </table>
+      <div class="modal-cadastro">
+        <div class="modal-content">
+          <header class="modal-header">
+            <h2>Novo Livro</h2>
+            <i class="btn close">&#10006;</i> 
+          </header>
+          <form class="modal-form" id="form">
+            <input type="text" id="id" class="modal-field" placeholder="Id" />
+            <input
+              type="text"
+              id="Nome"
+              class="modal-field"
+              placeholder="Nome"
+            />
+            <input
+              type="text"
+              id="Autor"
+              class="modal-field"
+              placeholder="Autor"
+            />
+            <input
+              type="text"
+              id="Id Editora"
+              class="modal-field"
+              placeholder="Id Editora"
+            />
+          </form>
+          <footer>
+            <button id="save" class="btn green">Salvar</button>
+            <button id="cancel" class="btn red">Cancelar</button>
+          </footer>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
