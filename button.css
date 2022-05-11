@@ -7,9 +7,15 @@
 }
 
 .btn:hover {
-    background-color: rgb(244, 244, 244);
+    background-color: #f4f4f4;
   
 }
 .btn:active{
     transform: scale(0.95);
+}
+.green:hover{
+  background: rgba(0, 128, 0, 0.732);
+}
+.red:hover{
+  background: rgba(249, 19, 19, 0.875);
 }

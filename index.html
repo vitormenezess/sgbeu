@@ -28,7 +28,7 @@
       </h1>
     </header>
     <main>
-      <button type="button" class="btn black">Cadastrar Livro</button>
+      <button type="button" class="btn cadastrar" id="cadastrarLivro">Cadastrar Livro</button>
       <table class="records">
         <thead>
           <tr>
@@ -63,11 +63,11 @@
           <td>Abril</td>
         </tbody>
       </table>
-      <div class="modal-cadastro">
+      <div class="modal-cadastro" id="modalCadastro">
         <div class="modal-content">
           <header class="modal-header">
             <h2>Novo Livro</h2>
-            <button class="btn close">x</button>
+            <button class="btn close" id="closeNovoLivro">x</button>
           </header>
           <form class="modal-form" id="form">
             <input type="text" id="id" class="modal-field" placeholder="Id" />
@@ -92,10 +92,11 @@
           </form>
           <footer>
             <button id="save" class="btn green">Salvar</button>
-            <button id="cancel" class="btn red">Cancelar</button>
+            <button id="cancelCadastro" class="btn red">Cancelar</button>
           </footer>
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

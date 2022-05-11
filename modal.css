@@ -1,27 +1,40 @@
-.modal-header{
-    display: flex;
-    justify-content: space-between;  
+.modal-cadastro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000a6;
+  opacity: 0;
+  z-index: -1;
 }
-.close{
-    font-size: 1.4rem;
-    padding: 2px 8px;
-    border: none;
+.modal-cadastro.active {
+  opacity: 1;
+  z-index: 1;
 }
-.modal-cadastro{
-    box-shadow: 0 2px 2px #ccc; 
-    margin: auto;   
+.modal-header {
+  display: flex;
+  justify-content: space-between;
 }
-.modal-form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.close {
+  font-size: 1.4rem;
+  padding: 2px 8px;
+  border: none;
 }
-.modal-field{
-    width: 40%;
-    height: 30px;
-    margin: 10px;
-    padding-left: 10px;
+.modal-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.modal-content{
-    padding-bottom: 10px;
+.modal-field {
+  width: 40%;
+  height: 30px;
+  margin: 10px;
+  padding-left: 5px;
+}
+.modal-content {
+  padding-bottom: 10px;
+  width: 50vw;
+  margin: 15vh auto;
+  background-color: white;
 }
