@@ -15,12 +15,10 @@
 .modal-header {
   display: flex;
   justify-content: space-between;
+  padding: 0 0 0 10px;
+  
 }
-.close {
-  font-size: 1.4rem;
-  padding: 2px 8px;
-  border: none;
-}
+
 .modal-form {
   display: flex;
   flex-wrap: wrap;
