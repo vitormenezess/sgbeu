@@ -1,8 +1,27 @@
 .modal-header{
     display: flex;
-    justify-content: space-between;
-   
+    justify-content: space-between;  
 }
 .close{
+    font-size: 1.4rem;
+    padding: 2px 8px;
     border: none;
+}
+.modal-cadastro{
+    box-shadow: 0 2px 2px #ccc; 
+    margin: auto;   
+}
+.modal-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.modal-field{
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+    padding-left: 10px;
+}
+.modal-content{
+    padding-bottom: 10px;
 }

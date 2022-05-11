@@ -13,3 +13,6 @@
     height: 50px;
     padding-left: 20px;
 }
+.records td:hover{
+    background: #ccc;
+}

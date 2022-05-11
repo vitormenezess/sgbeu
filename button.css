@@ -1,20 +1,15 @@
-.btn{
-    position: relative;
-    background: none;
-    border: solid 1px #121212;
-    padding: 6px 10px;
-    font-size: 1rem;
-
-    transition: color 200ms;  
-    cursor: pointer;
+.btn {
+  position: relative;
+  background: none;
+  border: solid 1px #121212;
+  padding: 6px 15px;
+  cursor: pointer;
 }
 
-.btn:is(:hover,:focus){
-    color: white;
+.btn:hover {
+    background-color: rgb(244, 244, 244);
+  
 }
-.btn::after{
-    position: absolute;
-    content: '';
-    inset: 0;
-    z-index: -1;
+.btn:active{
+    transform: scale(0.95);
 }
