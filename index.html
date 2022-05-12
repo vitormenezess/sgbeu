@@ -8,18 +8,22 @@
       src="https://kit.fontawesome.com/71d95cd2fb.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="shortcut icon" href="img/book-open-solid.svg" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="img/book-open-solid.svg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="button.css" />
-    <link rel="stylesheet" href="records.css">
-    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="records.css" />
+    <link rel="stylesheet" href="modal.css" />
     <title>
       SGBEU - Sistema de Gestão de Bibliotecas para Escolas e Universidades
     </title>
   </head>
   <body>
     <header>
-        <i class="fas fa-solid fa-book-open"></i>
+      <i class="fas fa-solid fa-book-open"></i>
       <h1>
         <abbr
           title="Sistema de Gestão de Bibliotecas para Escolas e Universidades"
@@ -28,39 +32,22 @@
       </h1>
     </header>
     <main>
-      <button type="button" class="btn cadastrar" id="cadastrarLivro">Cadastrar Livro</button>
-      <table class="records">
+      <button type="button" class="btn cadastrar" id="cadastrarLivro">
+        Cadastrar Livro
+      </button>
+      <table id="tableBook" class="records">
         <thead>
           <tr>
             <th>Id</th>
             <th>Nome</th>
             <th>Autor</th>
+            <th><abbr title="Padrão Internacional de Numeração de Livro">ISBN</abbr></th>
             <th>Id Editora</th>
+            <th>Opções</th>
           </tr>
         </thead>
         <tbody>
-          <td>1</td>
-          <td>A culpa é das estrelas</td>
-          <td>Geoge P.</td>
-          <td>Abril</td>
-        </tbody>
-        <tbody>
-          <td>1</td>
-          <td>A culpa é das estrelas</td>
-          <td>Geoge P.</td>
-          <td>Abril</td>
-        </tbody>
-        <tbody>
-          <td>1</td>
-          <td>A culpa é das estrelas</td>
-          <td>Geoge P.</td>
-          <td>Abril</td>
-        </tbody>
-        <tbody>
-          <td>1</td>
-          <td>A culpa é das estrelas</td>
-          <td>Geoge P.</td>
-          <td>Abril</td>
+      
         </tbody>
       </table>
       <div class="modal-cadastro" id="modalCadastro">
@@ -69,26 +56,30 @@
             <h2>Novo Livro</h2>
             <button class="btn close" id="closeNovoLivro">x</button>
           </header>
-          <form class="modal-form" id="form">
-            <input type="text" id="id" class="modal-field" placeholder="Id" />
+          <form class="modal-form-livro" id="form">
             <input
               type="text"
-              id="Nome"
-              class="modal-field"
+              id="nome"
+              data-index="new"
+              class="modal-field-livro"
               placeholder="Nome"
+              required
             />
             <input
               type="text"
-              id="Autor"
-              class="modal-field"
+              id="autor"
+              class="modal-field-livro"
               placeholder="Autor"
+              required
             />
             <input
               type="text"
-              id="Id Editora"
-              class="modal-field"
+              id="idEditora"
+              class="modal-field-livro"
               placeholder="Id Editora"
+              required
             />
+            <input type="text" id="isbn" class="modal-field-livro" placeholder="ISBN" required>
           </form>
           <footer>
             <button id="save" class="btn green">Salvar</button>

@@ -19,12 +19,12 @@
   
 }
 
-.modal-form {
+.modal-form-livro {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.modal-field {
+.modal-field-livro {
   width: 40%;
   height: 30px;
   margin: 10px;
