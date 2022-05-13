@@ -36,3 +36,25 @@
   margin: 15vh auto;
   background-color: white;
 }
+.modal-detalhe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid black;
+  background: yellowgreen;
+  width: 50%;
+  height: 60%;
+  opacity: 0;
+  z-index: -1;
+  
+}
+.modal-detalhe.active{
+  opacity: 1;
+  z-index: 1;
+}
+.header-detalhe{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+}

@@ -6,6 +6,14 @@ const closeModal = () => {
   document.getElementById("modalCadastro").classList.remove("active");
   clearFields();
 };
+const opendetail = (event) => {
+  if (event.target.type != "button") {
+    document.getElementById("modalDetalhe").classList.add("active");
+  }
+};
+const closedetail = () => {
+  document.getElementById("modalDetalhe").classList.remove("active");
+};
 
 const cancelCadatro = () => {
   closeModal();
@@ -84,12 +92,13 @@ const editDelete = (event) => {
       editBook(index);
     } else {
       const book = readBook()[index];
-      const response = confirm(`Desesa realmente Excluir o livro ' ${book.nome} '`);
+      const response = confirm(
+        `Desesa realmente Excluir o livro ' ${book.nome} '`
+      );
       if (response) {
         deleteBook(index);
         updateDisplay();
       }
-
     }
   }
 };
@@ -124,3 +133,7 @@ document.getElementById("save").addEventListener("click", saveBook);
 document
   .querySelector("#tableBook>tbody")
   .addEventListener("click", editDelete);
+document
+  .querySelector("#tableBook>tbody")
+  .addEventListener("click", opendetail);
+document.querySelector("#closeDetalhe").addEventListener("click", closedetail);
